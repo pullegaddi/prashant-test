@@ -20,11 +20,9 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    package_dir={"": "."},
+    packages=setuptools.find_packages(where="examples"),
     python_requires=">=3.6",
     install_requires=[
-        "PyYAML==5.1",
-        "unittest"
-    ]
+        "PyYAML==5.1"    ]
 )
